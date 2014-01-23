@@ -6,7 +6,7 @@ apns = require('apn'),
 DeviceProvider = require('./deviceprovider').DeviceProvider,
  
 server_config = {
- host:'localhost',
+ host:'54.212.108.194',
  port:'27017', //27017
  db:'pushnotdb'
 },
@@ -38,9 +38,9 @@ http.createServer(function (request, response) {
  var parsed_url = url.parse(request.url);
  route(parsed_url.href, request, response);
  
-}).listen(3000);
+}).listen(8080);
  
-console.log('Server running at http://localhost:3000');
+console.log('Server running at http://54.212.108.194');
  
 function route(url, request, response){
  switch(url) {
