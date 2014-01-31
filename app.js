@@ -7,7 +7,7 @@ DeviceProvider = require('./deviceprovider').DeviceProvider,
  
 server_config = {
  host:'54.184.86.146',
- port:'28017', //27017
+ port:'27017', //27017
  db:'pushnotdb'
 },
  
